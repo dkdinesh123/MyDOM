@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Class & objects ex of js</title>
+    </head>
+    <script type="text/javascript" >
+    class person {
+    constructor(name,year)
+    {
+        this.name=name;//Dinesh
+        this.year=year;//2000
+    }
+    age(year)
+    {
+        return year - this.year;//2021-2000
+    }
+}
+    </script>
+<body>
+        <p id="person"></p>
+        <script>
+        let date= new Date();
+        let year=date.getFullYear();
+        let p=new person("Dinesh" , 2000); //object
+        //document.write("hi");
+        document.getElementById("person").innerHTML=" Iam " + p.name + p.age(year)+" years old ";//2021
+      </script>   
+
+</body>
+</html>

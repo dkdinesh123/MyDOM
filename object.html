@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS objects Ex</title>
+    </head>
+<script>
+    function loadData()
+    {
+        var name=document.getElementById('name').value 
+        const person ={
+            firstName:name,
+            age:document.getElementById('age').value,
+            MobileNumber:document.getElementById('mobile').value,
+            fullName : function(){return "Mr."+this.firstName}
+        };
+        
+        const x=person;
+        x.firstName= "Dineshkarthik";
+        x.age=25;
+        document.getElementById("data").innerHTML =
+       // person.firstName.toUpperCase() + " is " + person.age + " years old.";
+        person.fullName() + " is " + person.age + " years old.";
+    }
+    function clearData()
+    {
+        document.getElementById("data").innerHTML="";
+    }
+</script>
+<body>
+    <input type="hidden" id="name" value="dinesh">
+    <input type="hidden" id="age" value="22">
+    <input type="hidden" id="mobile" value="7974226296">
+    <div onclick="loadData()">Show me</div>
+    <p id="data"></p>
+    <div onclick="clearData()">Clear Me</div>
+</body>
+</html>

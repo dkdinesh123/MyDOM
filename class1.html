@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Attributes -class</title>
+        <script type="text/javascript" src="js/simple.js"></script>
+    </head>
+    <script>
+        function loadData()
+        {
+            let date= new Date();
+            let year =date.getFullYear();
+            let p=new person("Dinesh",2000);
+            document.getElementById("person").innerHTML = " Iam " + p.name + p.age(year) + " years old"
+        }
+    </script>
+    <body>
+        <p id="person" ondblclick= "loadData()">Click Me</p>
+        <p id="person" onclick= "loadData()">Click Me</p>
+        
+    </body>
+</html>

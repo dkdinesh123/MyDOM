@@ -1,0 +1,20 @@
+<div id="top">
+<div id="nested">
+</div>
+</div>  
+
+<script>
+let div = document.createElement("div")
+
+let p = document.createElement("p")
+let span = document.createElement("span");
+
+// div.append(p, "Some text") //7
+// div.prepend(span); //8
+// console.log(div.childNodes)
+
+div.append("GAVS Technologies");
+div.prepend("Welcome to ");
+
+console.log(div.textContent);
+</script>

@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    line-height: 50px;
+    height: 70px;
+    background-color:limegreen;
+    padding: 10px 0;
+}
+#about
+{
+    color: rgba(0, 128, 0, 0.76);
+    font-size: large;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 800;
+    
+}
+.avatar {
+        vertical-align: middle;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+      }
+.Avatar1
+{
+    vertical-align: middle;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+ table:hover
+ {
+     color: #f11c1c;
+ }
+#add
+{
+    font-size:large;
+    font-weight: 700;
+    color: rgb(76, 0, 255);
+    font-style: italic;
+} 
+
+.menu-wrap {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+.logo-img {
+    height: 50px;
+}
+.menu-icon {
+    font-size: 2.4em;
+    color: #f11c1c;
+    line-height: 50px;
+}
+nav {
+    position: absolute;
+    background-color: #282953;
+    top:70px;
+    left:0;
+    width: 100%;
+}
+nav ul {
+    list-style-type: none;
+    max-height: 0px;
+    overflow:hidden;
+    transition: all 0.5s;
+}
+nav ul li {
+    padding: 0.5px;
+}
+nav ul li a {
+    display: inline-block;
+    padding: 12px;
+    color: #eb2525;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+}
+nav ul li a:hover, nav ul li a:focus {
+    color: #4d4aeb;
+}
+#checkbox {
+    display:none;
+}
+#checkbox:checked ~ nav ul {
+    max-height: 300px;
+    padding: 15px 0;
+    transition: all 0.5s;
+}
+
+@media (min-width: 768px) { 
+    .menu-icon {
+        display: none;
+        
+    }
+    nav {
+        position: 30px center;
+        top: -10px;
+        background-color: transparent;
+    }
+    nav ul {
+        max-height: 70px;
+        padding: 15px 0;
+        text-align: right;
+    }
+    nav ul li {
+        display: inline-flex;
+        padding-left: 30px;
+    }
+}
+h4
+{
+    font-size: 3.2em;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color:darkred;
+}
+h3
+{
+    color:orangered;
+    font-weight: 900;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h2
+{
+    color:rgb(80, 39, 228);
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 900;
+}
+h1{
+    font-size:xx-large;
+    text-align:center;
+    padding: 60px 40px 30px;
+    color:red;
+    font-style:normal;
+    font-weight:bold;
+    line-height: 1.2;
+}
+p{
+    line-height: 1.6;
+    font-size: 1.2em;
+    padding: 0 40px;
+    text-align: center;
+    color: rgb(140, 0, 255);
+}
+#Personal
+{
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: #f11c1c;
+}
+section {
+    height: 120vh;
+    border: 1px double block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-size: cover; /* Add this line */
+    background-position: center center; /* Add this line */
+    background-repeat: no-repeat; /* Add this line */
+    background-attachment: fixed; /* Add this line */
+}
+
+#home .profile-img {
+    width: 300px;
+    border-radius: 50%;
+}
+
+footer {
+    background-color: rgba(37, 39, 33, 0.904);
+    text-align: center;
+    padding: 60px;
+    font-style:normal;
+    font-weight: 800;
+    color: rgb(240, 125, 17);
+}
+
+#home h1 {
+    font-size: 3em;
+}
+
+section h2 {
+    font-size: 2.5em;
+}
+
+section h3 {
+    font-size: 2.5em;
+}
+
+header a {
+    text-decoration: none;
+    color: rgba(201, 231, 33, 0.801);
+}
+
+/* Add everything below here */
+
+#home {
+    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('https://wallpapercave.com/wp/wp2566226.jpg');
+}
+#details
+{
+    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('https://wallpaperaccess.com/full/3460572.jpg');
+}
+#about {
+    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('http://adwallpapers.xyz/uploads/posts/72981-sunset-clouds-sea-4k-ultra-hd-wallpaper__nature.jpg');
+}
+#add{
+    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('https://www.teahub.io/photos/full/6-67531_hd-car-wallpapers-4k-ultra-hd-pictures-for.jpg');
+}
+#contact{
+    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('https://wallpapercave.com/wp/wp2904753.jpg');
+}
+#Personal{
+    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('https://i.pinimg.com/originals/3c/d8/8c/3cd88c127a9d90c5abdcc9a4e3149ed2.jpg');
+}

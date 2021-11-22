@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js function ex</title>
+</head>
+<script type="text/javascript">
+    function displayDate()
+    {
+        var d=new Date();
+        document.getElementById('a').innerHTML=d;
+        //document.getSelection('a');
+       // var name="Dinesh";
+       // alert("Name is: "+name);
+   //  document.write("Name is : "+name);
+    }
+</script>
+
+<body>
+    <a href="#">Show me</a>
+     <a href="#" id= "a" >click me</a><br>
+     Enter Name:<input type="text" onkeydown="displayDate()">
+    // Enter Name:<input type="text" onmousemove="displayDate()">
+    <script>
+       displayDate();
+       document.write("Today Date is:<input type=text value="+displayDate()+ " readonly/>");
+      </script>
+</body>
+</html>

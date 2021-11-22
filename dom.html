@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document object model</title>
+</head>
+<body>
+    
+
+    <!-- <h1>Hi I am Dinesh From TamilNadu</h1> -->
+   
+     Name:<input type="text" id="uname">
+    <button type="button" id="btn">Click</button>
+    <script>
+        let btn = document.querySelector('#btn');
+        btn.onclick = function () {
+            alert(document.querySelector('#uname').value);
+        }; 
+    </script>
+   
+        <button>Click me</button>
+        <p>No handler Here</p>
+        <script>
+            let button=document.querySelector("button");
+            button.addEventListener("click",() =>
+            {
+                console.log("button clicked");
+            });
+        </script> 
+</body>
+</html> 

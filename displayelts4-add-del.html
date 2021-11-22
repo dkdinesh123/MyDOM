@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Document object model example</title>
+        <script type="text/javascript">
+        
+        function addChildElement()
+        {
+            const sect=document.querySelector('section');
+            const div=document.createElement('div');
+            div.textContent="Hi Dinesh"
+            sect.appendChild(div);
+            div.style.color="green";
+            const text=document.createTextNode('how are you');
+            const ndiv=document.querySelector('div');
+            ndiv.style.color="red";
+            ndiv.appendChild(text);
+        }
+        
+        function deleteChildElement()
+        {
+            const sect=document.querySelector('section');
+            const div=document.querySelector('div');
+            sect.removeChild(div);
+        }
+        
+        function addborder()
+        {
+            const img=document.querySelector('img');
+            img.style.border="5px solid gold"
+        }
+        
+        function removeborder()
+        {
+            const img=document.querySelector('img');
+            img.style.border=""
+        }
+        
+        </script>
+    </head>
+   
+    <body bgcolor="powderblue">
+        
+        <section>
+            <img src="images/bmw.jpg" width="200" height="200" 
+            onmouseover="addborder()" onmouseleave="removeborder()">
+            <p>Go and visit this page by clicking this link <a href="https://www.linkedin.com/signup">Visit Page
+            </a></p>
+        </section>
+        
+        <script type="text/javascript">
+            const img= document.querySelector('img');
+            console.log(img.TEXT_NODE)
+            console.log(img.ELEMENT_NODE)
+            img.src="images/sea.jpg"
+            const a=document.querySelector('a');
+            a.href="http://instagram.com"
+        </script>
+        
+        <button type="button" onclick="addChildElement()">Add Element</button>
+        <button type="button" onclick="deleteChildElement()">Delete Element</button>
+
+    </body>
+</html>

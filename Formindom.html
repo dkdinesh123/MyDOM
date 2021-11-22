@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form DOM event</title>
+</head>
+<style>
+    h1{
+        color: red;
+        font-weight: bold;
+    }
+    body
+    {
+        background-color:yellowgreen;
+    }
+    p
+    {   
+        color: rgb(137, 13, 253);
+        font-size:xx-large;
+        font-weight: bold;
+
+    }
+</style>
+<body>
+    <h1>Employee Declaration Form:</h1>
+    <form>
+        <div>
+            <label for="ename">Employee name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input id="ename" type="text">
+        </div>
+        <br>
+        <div>
+            <label for="dname">Department name:&nbsp;&nbsp;&nbsp;</label>
+            <input id="dname" type="text">
+        </div>
+        <div>
+            <br>
+            <input id="submit" type="SUBMIT">
+        </div>
+    </form>
+   <marquee><p></p></marquee>
+    <script>
+        const form = document.querySelector('form');
+        const ename = document.getElementById('ename');
+        const dname = document.getElementById('dname');
+        const para = document.querySelector('p');
+        
+        form.addEventListener("submit", (e)=> {
+            if(ename.value ==='' || dname.value ==='')
+            {
+                e.preventDefault();
+                para.textContent="Mandatory to filled in both rows !!!.";
+            }
+        });
+    </script>
+</body>
+</html>

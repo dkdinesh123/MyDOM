@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Example of JS Autofill:</title>
+    <script type="text/javascript" src="js/address.js"></script>
+
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend><b>Primary Address :</b></legend><br>
+            <label for="primaryaddress">Address:</label>
+            <input type="text" name="address" id="primaryaddress" required />
+            &nbsp; &nbsp; &nbsp; &nbsp;<label for="primaryzip">Zip Code:</label>
+            <input type="text" name="Zip code" id="primaryzip" pattern="[0-9]{6}" required/>
+        </fieldset>
+        <br>
+        <input type="checkbox" id="same" name="same" onchange="addressSame()"/>
+        <label for="same">Check primary address and secondary address are same:</label> <br><br>
+    
+    <fieldset>
+        <legend><b>Shipping Address</b></legend><br>
+        <label for="secondaryaddress">Address:</label>
+        <input type="text" name="address" id="secondaryaddress" required/>
+        &nbsp;&nbsp;&nbsp;&nbsp;<label for="secondaryzip">Zip Code:</label>
+        <input type="text" name="Zip code" id="secondaryzip" pattern="[0-9]{6}" required/><br/>
+    </fieldset><br>
+    
+    <input type="submit"  Value="Click Me"/>
+</form>
+</body>
+</html>

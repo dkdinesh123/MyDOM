@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>DOM ex of node</title>
+    </head>
+<script type="text/javascript">
+    function getsq()
+    {
+        var no=document.getElementById("num").value;
+        alert("Your age is "+(2021-no));
+    }
+    function display()
+    {
+        var disp=document.getElementsByName("number");
+        alert("ENtered year" +disp[0].value);
+    }
+    function countpara()
+    {
+        var totalpara=document.querySelectorAll("p");
+        alert("total no of lines in para" +totalpara.length);
+    }
+</script>
+<body>
+    <form>
+        Enter the year you were born:<input type="number" id="num" name="number"/><br/><br/>
+        <input type="button" value="Display Year" onclick="display()"/><br/>
+        <input type="button" value="Calculate Age" onclick="getsq()"/><br/><br/>
+    </form>
+    <p>What is Document object model?</p>
+    <p>It is an API</p>
+    <p>Predefined methods are available</p>
+    <p>Represent webpage in tree structure format</p>
+    <p>so that program can read,access, change a document's structure,style or consent</p>
+    <button onclick="countpara()">count no of lines</button>
+</body>
+</html>
